@@ -45,17 +45,17 @@
       gap: 4rem;
       margin: auto auto;
     }
-  }
-  .second-team div:last-child {
-    display: none;
-  }
-  .profile-container {
-    max-width: max-content;
-    .profile-name {
-      max-width: max-content !important;
+    .second-team div:last-child {
+      display: none;
     }
-    p {
-      max-width: max-content !important;
+    .profile-container {
+      max-width: max-content;
+      .profile-name {
+        max-width: max-content !important;
+      }
+      p {
+        max-width: max-content !important;
+      }
     }
   }
 }
