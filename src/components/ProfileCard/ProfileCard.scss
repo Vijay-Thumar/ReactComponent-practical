@@ -1,0 +1,18 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  img,
+  h2,
+  p {
+    margin: 0;
+  }
+  .profile-image {
+    width: 21rem;
+    margin-bottom: 1rem;
+  }
+  .profile-name {
+    display: inline-block;
+    width: 100%;
+  }
+}

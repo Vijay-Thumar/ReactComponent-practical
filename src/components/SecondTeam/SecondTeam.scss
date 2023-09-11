@@ -1,0 +1,61 @@
+.main-container {
+  width: 100%;
+  background-color: rgba(137, 43, 226, 0.2);
+  height: 100vh;
+  .inner-container {
+    max-width: 80rem;
+    margin: auto auto;
+    background-color: pink;
+    // height: 100vh;
+    padding: 5rem;
+    border-radius: 2rem;
+    justify-content: center;
+    .details {
+      display: flex;
+      justify-content: center;
+      .container-details {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        max-width: 70rem;
+        align-items: center;
+        .main-heading {
+          font-family: "Montserrat";
+          font-size: 3.2rem;
+          font-style: normal;
+          margin: 0 0 4rem 0;
+          font-weight: 700;
+          line-height: 5.6rem;
+        }
+        .description {
+          font-family: Lato;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.6rem;
+        }
+      }
+    }
+    .second-team {
+      // display: flex;
+      // justify-content: space-evenly;
+      // align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: max-content;
+      gap: 4rem;
+      margin: auto auto;
+    }
+  }
+  .second-team div:last-child {
+    display: none;
+  }
+  .profile-container {
+    max-width: max-content;
+    .profile-name {
+      max-width: max-content !important;
+    }
+    p {
+      max-width: max-content !important;
+    }
+  }
+}
