@@ -56,40 +56,46 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 .section-team {
-  .Container {
+  .container {
     display: grid;
-    grid-template-columns: 500px 1fr;
-    max-height: 61rem;
-    width: 80rem;
+    grid-template-columns: 1fr 2fr;
+    max-height: 107.2rem;
+    max-width: 144rem;
     margin: auto auto;
     background-color: rgba(85, 85, 85, 0.1);
     border-radius: 2rem;
-    padding: 5rem;
-    .Container-details {
-      padding: 0 4.8rem 0 4.8rem;
-      .Main-heading {
+    padding: 9.6rem 16rem;
+    // padding: 5rem;
+    .container-details {
+      .main-heading {
+        margin: 0 0 5.6rem 0 !important;
         font-family: "Montserrat";
-        font-size: 3.2rem;
+        font-size: 4.8rem;
         font-style: normal;
-        margin: 0 0 4rem 0;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 5.6rem;
+        // max-width: 230px;
+        // max-height: 56px  ;
       }
       .description {
-        font-family: Lato;
-        font-size: 1rem;
+        font-family: "Lato";
+        font-size: 1.6rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 25.6rem;
+        max-height: 12rem;
       }
     }
     .gallery-holder {
       width: 100%;
-      .Container-Gallery {
+      .container-Gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         align-items: center;
         justify-items: center;
+        // max-width: max-content;
+        gap: 3.2rem;
         .description {
           display: inline-block;
         }

@@ -3,21 +3,6 @@ import ProfilesContainer from "../ProfilesContainer/ProfilesContainer";
 import "./SecondTeam.scss";
 function SecondTeam() {
   return (
-    // <div className='Container-2'>
-    //   <div className='container'>
-    //     <div className='Container-details'>
-    //       <h3 className='Main-heading'>Our team</h3>
-    //       <p className='description'>
-    //         A team is a group of people who are interdependent with respect to
-    //         information, resources, and skills and who seek to combine their
-    //         efforts to achieve a common goal
-    //       </p>
-    //     </div>
-    //     <div>
-    //       <ProfilesContainer classDesign='second-team' />
-    //     </div>
-    //   </div>
-    // </div>
     <div className='main-container'>
       <div className='inner-container'>
         <div className='details'>
