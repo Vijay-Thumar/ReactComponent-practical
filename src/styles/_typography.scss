@@ -7,14 +7,12 @@
 body {
     font-family:  sans-serif;
     background-color: #ffffff;
-    font-size: 62.5%;
-
 }
 
 html {
     /* font -size: 10px */
     /* 10px / 16px = 0.625 = 62.55 */
-    font-size: 62.5%;
+    font-size: 62.5% !important;
   }
   
   body {
