@@ -1,0 +1,71 @@
+.third-section {
+  height: 100vh;
+  width: 100%;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 144rem;
+    height: 159.2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: auto auto;
+    padding: 10.4rem 16rem;
+    gap: 8rem;
+    .team-intro-text {
+      max-width: 83.2rem;
+      max-height: 16rem;
+      font-family: "Montserrat";
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 4rem;
+    }
+    .team-members {
+      display: flex;
+      flex-direction: column;
+      .profile {
+        display: flex;
+        gap: 10rem;
+        .profile-image-container {
+          max-width: 54.4rem;
+          max-height: 54.4rem;
+        }
+        .team-member-details {
+          max-width: 54rem;
+          margin: auto auto;
+          div {
+            margin: auto auto;
+            .team-m-name {
+              margin-bottom: 0.8rem;
+              font-family: "Montserrat";
+              font-size: 3.2rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 4rem;
+            }
+            .team-m-position {
+              margin-bottom: 4rem;
+              font-family: "Lato";
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 2.4rem;
+              text-transform: uppercase;
+            }
+            .team-m-description {
+              max-width: 35.2rem;
+              font-family: "Lato";
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 2.4rem;
+            }
+          }
+        }
+      }
+      .profile:nth-child(2){
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

@@ -1,8 +1,9 @@
-@import './components/ProfilesContainer/ProfilesContainer.scss';
-@import './components/ProfileCard/ProfileCard.scss';
+@import "./components/ProfilesContainer/ProfilesContainer.scss";
+@import "./components/ProfileCard/ProfileCard.scss";
 @import "./components/TeamIntro/TeamIntro.scss";
 @import "./components/SecondTeam/SecondTeam.scss";
-@import "./styles/_typography.scss";  
+@import "./styles/_typography.scss";
+@import "./components/ThirdIntro/ThirdIntro.scss";
 
 .App {
   text-align: center;

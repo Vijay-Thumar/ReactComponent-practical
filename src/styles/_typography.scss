@@ -1,25 +1,29 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family:  sans-serif;
-    background-color: #ffffff;
+  font-family: sans-serif;
+  background-color: #ffffff;
 }
 
 html {
-    /* font -size: 10px */
-    /* 10px / 16px = 0.625 = 62.55 */
-    font-size: 62.5% !important;
-  }
-  
-  body {
-    font-family: sans-serif;
-    line-height: 1;
-    // font-weight: 400;
-    // color: #555;
-    // overflow-x: hidden;
-    /* background-color: gray ; */
-  }
+  /* font -size: 10px */
+  /* 10px / 16px = 0.625 = 62.55 */
+  font-size: 62.5% !important;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  // font-weight: 400;
+  // color: #555;
+  // overflow-x: hidden;
+  /* background-color: gray ; */
+}
+
+.mt-16{
+  margin-top: 1.6rem;
+}
