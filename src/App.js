@@ -1,22 +1,24 @@
 import "./App.scss";
 import SecondTeam from "./components/SecondTeam/SecondTeam";
-import TeamIntro from "./components/TeamIntro/TeamIntro";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ThirdIntro from "./components/ThirdIntro/ThirdIntro";
+import TeamIntro from "./components/FirstTeam/FirstTeam";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ThirdIntro from "./components/ThirdTeam/ThirdTeam";
 import Contact from "./components/ContactUs/Contact";
+import NavigationMenu from "./components/Navigation/NavigationMenu";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<TeamIntro />} />
-          <Route path='/2nd' element={<SecondTeam />} />
-          <Route path='/3rd' element={<ThirdIntro />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Router>
+      <NavigationMenu />
+      <Routes>
+        <Route exact path='/' element={<TeamIntro />} />
+        <Route exact path='/Team1' element={<TeamIntro />} />
+        <Route path='/Team2' element={<SecondTeam />} />
+        <Route path='/Team3' element={<ThirdIntro />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/navigation' element={<NavigationMenu />} />
+      </Routes>
+    </Router>
   );
 }
 

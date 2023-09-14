@@ -1,10 +1,10 @@
-@import "./components/ProfilesContainer/ProfilesContainer.scss";
-@import "./components/ProfileCard/ProfileCard.scss";
-@import "./components/TeamIntro/TeamIntro.scss";
-@import "./components/SecondTeam/SecondTeam.scss";
 @import "./styles/_typography.scss";
-@import "./components/ThirdIntro/ThirdIntro.scss";
-@import './components/ContactUs/Contact.scss';
+@import "./components/FirstTeam/FirstTeam.scss";
+@import "./components/SecondTeam/SecondTeam.scss";
+@import "./components/ThirdTeam/ThirdTeam.scss";
+@import "./components/ContactUs/Contact.scss";
+@import "./components/ProfileCard/ProfileCard.scss";
+@import "./components/ProfilesContainer/ProfilesContainer.scss";
 
 .App {
   text-align: center;
