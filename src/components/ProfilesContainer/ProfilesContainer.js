@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ProfileCard from "../ProfileCard/ProfileCard";
 // import '../TeamIntro/TeamIntro.scss'
-import { COOKIE_NAME_PRERENDER_BYPASS } from "next/dist/server/api-utils";
 
-function ProfilesContainer({classDesign}) {
+const ProfilesContainer = ({ classDesign }) => {
   const [images, setImages] = useState([]);
 
-  function getImages() {
+  const getImages = () => {
     const images = [];
     const directory = require.context(
       "../../assets",
@@ -18,7 +17,7 @@ function ProfilesContainer({classDesign}) {
     });
     console.log("avav");
     return images;
-  }
+  };
 
   useEffect(() => {
     const img = getImages();
@@ -33,7 +32,7 @@ function ProfilesContainer({classDesign}) {
     { name: "William White", position: "Senior Designer" },
   ];
 
-  console.log('className: ', classDesign)
+  console.log("className: ", classDesign);
   return (
     <div className={classDesign}>
       {images.length > 0
@@ -41,14 +40,15 @@ function ProfilesContainer({classDesign}) {
             console.log("index", index, "userData", userData[index]);
             return (
               <ProfileCard
+                key={index}
                 img={imageSrc}
-                name={userData[index].name}
-                position={userData[index].position}></ProfileCard>
+                name={userData[index]?.name}
+                position={userData[index]?.position}></ProfileCard>
             );
           })
         : "No user images found"}
     </div>
   );
-}
+};
 
 export default ProfilesContainer;
